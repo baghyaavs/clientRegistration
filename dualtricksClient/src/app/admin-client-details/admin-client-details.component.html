@@ -1,0 +1,23 @@
+<h3>CLIENTS DETAILS</h3>
+<table>
+    <thead>
+      <tr>
+        <th>Client Name</th>
+        <th>Industry</th>
+        <th>Service looking for</th>
+        <th>Service required for</th>
+        <th>When you required</th>
+        <th>Business Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clientDetails">
+        <td>{{ client.client_Name }}</td>
+        <td>{{ client.industry}}</td>
+        <td>{{ client.service_looking }}</td>
+        <td>{{ client.service_req }}</td>
+        <td>{{ client.when_req }}</td>
+        <td>{{ client.description}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,50 @@
+<form (ngSubmit)="Register()">
+    <div class="container">
+      <h1>Sign In</h1>
+      <label for="username"><b>User Name</b></label>
+      <input
+        type="text"
+        placeholder="Enter username"
+        name="username"
+        id="username" [(ngModel)] ="user.username"  
+        required
+      />
+      <label for="userphno"><b>Phone Number</b></label>
+      <input
+        type="text"
+        placeholder="Enter phone number"
+        name="userphno"
+        id="userphno" [(ngModel)] ="user.userphno"  
+        required
+      />
+
+      <label for="email"><b>Email</b></label>
+      <input
+        type="text"
+        placeholder="Enter Email"
+        name="email"
+        id="email" [(ngModel)] ="user.email"  
+        required
+      />
+
+      <label for="pwd"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="pwd"
+        id="pwd" [(ngModel)] ="user.pwd"  
+        required
+      />
+
+      <label for="pwd-repeat"><b>Confirm Password</b></label>
+      <input
+        type="password"
+        placeholder="Repeat Password"
+        name="pwd-repeat"
+        id="pwd-repeat"
+        required
+      />
+
+      <button type="submit">Submit</button>
+    </div>
+  </form>

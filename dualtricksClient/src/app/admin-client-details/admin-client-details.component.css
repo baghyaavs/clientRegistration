@@ -1,0 +1,39 @@
+table {
+    backdrop-filter: blur(5px);
+    background-color: rgba(500, 500, 255, 0.1); /* Transparent or see-through bg */
+    border: 3px inset burlywood;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    color:white;
+  }
+  h3{
+    font-family: Calibri; 
+    font-size: 25pt;         
+    font-style: normal; 
+    font-weight: bold; 
+    color:beige;
+    text-align: center; 
+    text-decoration: underline;
+  }
+ 
+  table tr {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent or see-through bg */
+    border: 3px inset burlywood;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size:20px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  

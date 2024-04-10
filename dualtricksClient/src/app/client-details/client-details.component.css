@@ -1,0 +1,45 @@
+
+  h3{
+    font-family: Calibri; 
+    font-size: 25pt;         
+    font-style: normal; 
+    font-weight: bold; 
+    color:beige;
+    text-align: center; 
+    text-decoration: underline;
+  }
+  
+  table{
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent or see-through bg */
+    border: 3px inset burlywood;
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+  }
+  table.inner{
+    border: 0px
+  }
+  td{
+    font-family: Calibri; 
+    color:white; 
+    font-size: 15pt; 
+    font-style: normal;
+    font-weight: bold;
+    padding: 13px;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    width: 270px;
+    background-color: rgb(68, 18, 232);
+    color: white;
+    border-radius: 0.25em;
+  }
+  
+  /* hover functionality for button */
+  button:hover {
+    cursor: pointer;
+    background-color: rgb(41, 4, 164);
+  }

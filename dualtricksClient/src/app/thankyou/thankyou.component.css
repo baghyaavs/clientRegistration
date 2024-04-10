@@ -1,0 +1,46 @@
+.content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    left: 150px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent or see-through bg */
+    border: 3px inset burlywood;
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    padding: 70px;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  } 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  span{
+    font-size: 150px;
+    color: cornsilk;
+  }
+  .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  

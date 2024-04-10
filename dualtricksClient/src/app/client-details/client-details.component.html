@@ -1,0 +1,82 @@
+<div class="content">
+<form (ngSubmit)="Register()">
+    <h3>CLIENT REGISTRATION FORM</h3>
+<table align="center" cellpadding = "30">
+<tr>
+<td>CLIENT NAME</td>
+<td><input type="text" name="client_Name" [(ngModel)] ="client.client_Name" maxlength="30"/>
+</td>
+</tr>
+<tr>
+<td>INDUSTRY OF THE CLIENT</td>
+<td>
+<select name="industry" id="industry" [(ngModel)] ="client.industry" >
+<option value="-1">Select an Option</option>
+<option value="Automation">Automation </option>
+<option value="Healthcare">Healthcare</option>
+<option value="Financial Services">Financial Services</option>
+<option value="Communications">Communications</option>
+<option value="Transportation">Transportation</option>
+<option value="Manufacturing">Manufacturing</option>
+<option value="Energy">Energy</option>
+<option value="Media">Media</option>
+<option value="Hospitality">Hospitality</option>
+<option value="Pharmaceuticals">Pharmaceuticals</option>
+<option value="Constructions">Constructions</option>
+<option value="Technology">Technology</option>
+</select>
+</td>
+</tr>
+ 
+<tr>
+    <td>Service looking for</td>
+    <td>
+    <select name="service_looking" id="service_looking" [(ngModel)] ="client.service_looking">
+    <option value="-1">Select an Option</option>
+    <option value="Business Solution">Business Solutions </option>
+    <option value="Business Development">Business Development</option>
+    <option value="Business Growth">Business Growth</option>
+    </select>
+    </td>
+    </tr>
+
+    <tr>
+        <td>Service required for</td>
+        <td>
+        <select name="service_req" id="service_req" [(ngModel)] ="client.service_req">
+        <option value="-1">Select an Option</option>
+        <option value="Partial Growth">Partial Growth </option>
+        <option value="Full Growth">Full Growth</option>
+        <option value="Business Setup">Business Setup</option>
+        </select>
+        </td>
+        </tr>
+ 
+        <tr>
+            <td>When you required</td>
+            <td>
+            <select name="when_req" id="when_req" [(ngModel)] ="client.when_req">
+            <option value="-1">Select an Option</option>
+            <option value="Immediately">Immediately</option>
+            <option value="Within a week">Within a week</option>
+            <option value="Within a month">Within a month</option>
+            </select>
+            </td>
+            </tr>
+
+<tr>
+<td>Business Description <br /><br /><br /></td>
+<td><textarea name="description" rows="4" cols="30" placeholder="max 1000 words" [(ngModel)] ="client.description" ></textarea></td>
+</tr>
+<tr>
+    <td colspan="2" align="center">
+        <button type="submit">Submit</button>
+    </td>
+    </tr>
+
+</table>
+
+ 
+</form>
+ 
+</div>

@@ -1,0 +1,27 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <div class="container">
+    <h1>LogIn</h1>
+    <label for="userid"><b>User Id</b></label>
+    <input
+      type="text"
+      placeholder="Enter either email or phone number"
+      name="userid"
+      id="userid" formControlName="userid"
+      required
+    />
+    <label for="pwd"><b>Password</b></label>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      name="pwd"
+      id="pwd" formControlName="pwd"
+      required
+    />
+    <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+    <div>
+      <p>Are you the ADMIN? <a routerLink="/admin">Login Here</a>.</p>
+    </div>
+
+  </div>
+ 
+</form>

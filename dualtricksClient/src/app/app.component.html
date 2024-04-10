@@ -1,0 +1,22 @@
+
+<div id="container">
+    <header>
+        <div class="info">
+            <p> Baghyaa VS</p>
+            <p>9445715583 </p> 
+            <p>baghyaavs007&#64;gmail.com</p>
+        </div>
+        <div class="nav-bar">
+            <ng-container *ngIf="!isLoggedIn(); else logoutTemplate">
+            <a routerLink="/signin">Sign In</a>
+            <a routerLink="/login">Log In</a>
+            </ng-container>
+            <ng-template #logoutTemplate>
+            <a (click)="logout()" routerLink="/login">Log Out</a>
+        </ng-template>
+          </div>
+    </header>
+    <div>
+        <router-outlet></router-outlet>
+      </div>
+</div>
